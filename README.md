@@ -1,4 +1,4 @@
-Docker images: https://hub.docker.com/r/greensheep/plex-server-docker-rpi/tags
+Docker images: https://hub.docker.com/r/ajdaniel/plex-server-rpi/tags
 
 # Plex Server for Raspberry Pi
 
@@ -33,7 +33,7 @@ docker run \
   --volume $(echo $HOME)/media/plex/config:/config \
   --volume $(echo $HOME)/media/plex/data:/data \
   --volume $(echo $HOME)/media/plex/transcode:/transcode \
-  greensheep/plex-server-docker-rpi:latest
+  ajdaniel/plex-server-rpi:latest
 ```
 
 After around 30 seconds, the Plex web admin should be available at `http://{ip address of Pi}:32400/web`.
@@ -66,7 +66,7 @@ docker run \
   --volume $(echo $HOME)/media/plex/config:/config \
   --volume $(echo $HOME)/media/plex/data:/data \
   --volume $(echo $HOME)/media/plex/transcode:/transcode \
-  greensheep/plex-server-docker-rpi:latest
+  ajdaniel/plex-server-rpi:latest
 ```
 
 ## Updating
@@ -74,7 +74,7 @@ docker run \
 Plex cannot be updated via the web ui. Run the following to download and run a new version:
 
 ```sh
-docker pull greensheep/plex-server-docker-rpi:latest
+docker pull ajdaniel/plex-server-rpi:latest
 docker stop plex
 docker rm -f plex
 # `docker run ...` command from above!
