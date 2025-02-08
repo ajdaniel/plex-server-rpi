@@ -30,4 +30,4 @@ jobs:
           context: .
           platforms: linux/arm,linux/arm64
           push: true
-          tags: greensheep/plex-server-docker-rpi:${{ steps.version.outputs.VERSION }},greensheep/plex-server-docker-rpi:latest
+          tags: ajdaniel/plex-server-rpi:${{ steps.version.outputs.VERSION }},ajdaniel/plex-server-rpi:latest
